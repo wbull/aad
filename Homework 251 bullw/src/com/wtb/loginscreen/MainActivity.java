@@ -67,7 +67,6 @@ public class MainActivity extends Activity {
     }
     
     public void submitCredentials(View view, Editable email, Editable pass){
-    	//Do something with email and pass
     	Intent intent = new Intent (this, LoggedInActivity.class);
     	intent.putExtra(EXTRA_EMAIL, email.toString());
     	intent.putExtra(EXTRA_PASS, pass.toString());
