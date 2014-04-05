@@ -41,6 +41,7 @@ public class MainActivity extends Activity {
         	});
         
         Button signInButton = (Button) findViewById(R.id.sign_in_button);
+        signInButton.setTextColor(Color.LTGRAY);
         signInButton.setOnClickListener( new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
