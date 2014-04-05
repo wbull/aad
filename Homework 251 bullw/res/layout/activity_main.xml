@@ -2,56 +2,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/background_repeat"
+    android:clickable="false"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingTop="0dp"
     android:theme="@android:style/Theme.NoTitleBar"
-    android:orientation="vertical"
-	android:background="@drawable/background_repeat"
     tools:context=".MainActivity" >
 
     <ImageView
         android:id="@+id/logoimage"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/email_field"
         android:layout_centerHorizontal="true"
-        android:paddingBottom="12dp"
+        android:scaleType="fitCenter"
         android:src="@drawable/logo_nologo" />
 
-    <EditText
-        android:id="@+id/email_field"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/logoimage"
-        android:layout_alignLeft="@+id/logoimage"
-        android:layout_alignRight="@+id/logoimage"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:hint="Enter your email address"
-        android:inputType="textEmailAddress" >
-		<requestFocus />
-    </EditText>
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pass_field"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Enter your email address"
+            android:inputType="textEmailAddress" >
 
-    <EditText
-        android:id="@+id/pass_field"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/logoimage"
-        android:layout_alignRight="@+id/logoimage"
-        android:layout_below="@id/email_field"
-        android:layout_marginBottom="48dp"
-        android:ems="10"
-        android:hint="Enter your password"
-        android:inputType="textPassword"/>
+            <requestFocus />
+        </EditText>
 
-    <Button
-        android:id="@+id/sign_in_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="    Sign In    " />
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="    Sign In    " />
 
-</RelativeLayout>
+        <EditText
+            android:id="@+id/pass_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sign_in_button"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
