@@ -13,16 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="asdfeeeeeeeeee" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/logged_in_password_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logged_in_email_field"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
-        android:text="Asdfasdfasdfas" />
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
