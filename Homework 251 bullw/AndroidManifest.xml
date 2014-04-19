@@ -8,9 +8,10 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
+	<!-- Icon image from http://commons.wikimedia.org/wiki/Crystal_Clear -->
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         <activity

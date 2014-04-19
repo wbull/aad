@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">LoginScreen</string>
+    <string name="app_name">Log In</string>
     <string name="title_activity_logged_in">LoggedInActivity</string>
     <string name="sign_in">Sign In</string>
     <string name="email_hint">Enter your email</string>
