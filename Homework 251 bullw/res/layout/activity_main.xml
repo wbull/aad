@@ -19,7 +19,8 @@
         android:layout_above="@+id/email_field"
         android:layout_centerHorizontal="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/logo_nologo" />
+        android:src="@drawable/logo_nologo"
+        android:contentDescription="@+string/logo_desc" />
 
         <EditText
             android:id="@+id/email_field"
@@ -30,7 +31,7 @@
             android:ems="10"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
-            android:background="@drawable/patch" >
+            android:background="@drawable/selector" >
 
             <requestFocus />
         </EditText>
@@ -42,7 +43,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:text="@+string/sign_in"
-            android:background="@drawable/patch" />
+            android:background="@drawable/selector" />
 
         <EditText
             android:id="@+id/pass_field"
@@ -53,6 +54,6 @@
             android:ems="10"
             android:hint="@string/pass_hint"
             android:inputType="textPassword"
-            android:background="@drawable/patch" />
+            android:background="@drawable/selector" />
 
     </RelativeLayout>

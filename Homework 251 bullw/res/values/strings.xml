@@ -6,5 +6,6 @@
     <string name="sign_in">Sign In</string>
     <string name="email_hint">Enter your email</string>
     <string name="pass_hint">Enter your password</string>
+    <string name="logo_desc">This is a logo of no logo</string>
 
 </resources>
