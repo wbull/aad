@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Homework 2</string>
+    
+    <string name="delete_task">REMOVE TASK</string>
+    <string name="add_task">ADD TASK</string>
+
+</resources>

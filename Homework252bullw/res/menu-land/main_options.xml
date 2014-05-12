@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+            <item
+            android:id="@+id/add_task"
+            android:showAsAction="always|withText"
+            android:title="@string/add_task">
+        </item>
+                <item
+            android:id="@+id/delete_task2"
+            android:showAsAction="ifRoom|withText"
+            android:title="@string/delete_task">
+        </item>
+</menu>
