@@ -137,27 +137,4 @@ public class SoundService extends Service implements OnCompletionListener {
 		stopSelf();
 	}
 
-	  
-    @SuppressLint("NewApi")
-	private void showNotification() {
-    	
-    	Intent notificationIntent = new Intent(getApplicationContext(), MainActivity.class);
-    	
-    	notificationIntent.setAction(Intent.ACTION_MAIN);
-    	notificationIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-    	
-    	PendingIntent contentIntent = PendingIntent.getActivity(getApplicationContext(),
-    	        0, notificationIntent,
-    	        PendingIntent.FLAG_UPDATE_CURRENT);
-
-        Builder builder = new Notification.Builder(getApplicationContext())
-        	.setContentIntent(contentIntent)
-        	.setContentText(getText(R.string.sound_service_started))
-        	.setContentTitle(getText(R.string.sound_service_label))
-        	.setSmallIcon(R.drawable.ic_launcher);
-        
-        Notification n = builder.build();    
-        
-        mNotificationManager.notify(NOTIFICATION, n);
-    }
 }
